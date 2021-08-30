@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style type="text/css">
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      :root {
+        --font-family-secondary: "Roboto", sans-serif;
+      }
+      .email-wrapper {
+        font-family: var(--font-family-secondary);
+        background-color: #f6f6f6;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .email-wrapper img {
+        margin-bottom: 10px;
+      }
+      .sub-container {
+        width: 80%;
+      }
+      .logo-container {
+        background-color: #f1f4f8;
+        text-align: center;
+        padding: 15px 10px;
+        color: #f6a392;
+      }
+      .email-middle {
+        text-align: center;
+        padding: 50px 10px;
+        font-size: 20px;
+        background-color: #fff;
+      }
+      .email-middle a {
+        text-decoration: none;
+        color: #000;
+      }
+      .email-middle a:hover {
+        color: blue;
+      }
+      .address-footer {
+        text-align: center;
+        padding: 20px;
+        line-height: 24px;
+        color: #80868b;
+        background-color: #f6f6f6;
+      }
+      .address-footer a {
+        color: #80868b;
+      }
+      @media all and (max-width: 500px) {
+        .logo-container img {
+          width: 200px;
+        }
+      }
+      @media all and (max-width: 415px) {
+        .email-middle {
+          font-size: 16px;
+        }
+        .logo-container img {
+          width: 150px;
+        }
+      }
+      @media all and (max-width: 380px) {
+        .address-footer {
+          font-size: 13px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="email-wrapper">
+      <div class="sub-container">
+        <div class="logo-container">
+          <img src="./w-logo_adobespark.png" alt="Logo" />
+          <h3>Yay!!!</h3>
+        </div>
+        <div class="email-middle">
+          <p>Hi First Name,</p>
+          <br />
+          <p class="email-para">
+            You have a new Resume for your requirement of a Requirement Name.
+          </p>
+          <br />
+          <p>Job ID: ________</p>
+          <br />
+          <p><a href="#">Click here to view</a></p>
+        </div>
+      </div>
+      <div class="address-footer">
+        <p>
+          WebPipl, #601, White Fields, Hyderabad, 500081 <br />
+          Don't like these Emails?
+          <a href="#">Unsubscribe</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
